@@ -1,0 +1,106 @@
+.designed {
+  background-image: linear-gradient(hsl(336, 50%, 69%), hsl(192, 20%, 90%));
+  margin: 100px 0px;
+  padding: 40px;
+  border-radius: 30px;
+}
+
+@media (min-width:1440px) {
+  .designed {
+    margin: 0 auto;
+    width: 1440px;
+  } 
+}
+
+.disegned__left {
+  width: 50%;
+}
+
+.disegned__right {
+  width: 50%;
+}
+
+.disegned__right img {
+  width: 80%;
+  border-radius: 20px;
+}
+.disegned__card {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.disegned__title {
+  font-size: 72px;
+  color: var(--secondaryColor);
+  padding: 40px 0px;
+}
+
+.designed__link {
+  padding: 16px 34px;
+  background-color: rgb(235, 231, 231);
+  border-radius: 20px;
+  transition: .6s;
+  color: var(--primaryColor);
+}
+
+.designed__link i {
+  transform: rotate(40deg);
+  padding: 0px 0px 10px 0px;
+  color: var(--primaryColor);
+}
+
+.designed__link:hover {
+  box-shadow: inset 150px 0px white;
+}
+
+@media (max-width:1000px) {
+  .disegned__card {
+    gap: 20px;
+  }
+  
+  .disegned__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width:670px) {
+  .disegned__right img {
+    display: none;
+  }
+  
+  .designed {
+    padding: 0;
+  }
+  
+  
+  .disegned__card{
+    background-image: url(../imgs/disegned-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px 300px;
+    width: 100%;
+    border-radius: 40px;
+  }
+  
+  .disegned__left {
+    width: 100%;
+  }
+}
+
+@media (max-width:450px) {
+  .disegned__title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width:390px) {
+  .disegned__title {
+    font-size: 30px;
+  }
+
+  .disegned__card {
+    padding: 90px 20px;
+  }
+}

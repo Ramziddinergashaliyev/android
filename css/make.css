@@ -1,0 +1,86 @@
+.make {
+  background-image: url(../imgs/manzara.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+  border-radius: 40px;
+  margin-top: 50px;
+}
+
+.hero__img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.288);
+}
+
+.hero__img img {
+  border-radius: 20px;
+  width: 350px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.make__position__card {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.make__title {
+  font-size: 50px;
+  color: var(--secondaryColor);
+}
+
+.make__number {
+  font-size: 160px;
+  color: rgba(173, 132, 192, 0.815);
+  font-weight: bolder;
+}
+
+.link {
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: .5s;
+  background-color: rgb(187, 182, 182);
+}
+
+.link:hover {
+  box-shadow:inset 400px 0px white;
+}
+
+.link i {
+  font-size: 22px;
+  color: var(--primaryColor);
+}
+
+@media (max-width:730px) {
+  .hero__img img {
+    width: 100%;
+  }
+}
+
+@media (max-width:350px) {
+  .link {
+    font-size: 12px;
+  }
+
+  .make__title {
+    font-size: 34px;
+  }
+}

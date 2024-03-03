@@ -1,0 +1,148 @@
+.dropped__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dropped__title {
+  font-size: 60px;
+  color: var(--primaryColor);
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.dropped__card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 40px;
+}
+
+.dropped__card:nth-child(1) {
+  background-color: antiquewhite;
+}
+
+.dropped__card:nth-child(2) {
+  background-color: rgb(216, 234, 235);
+}
+.dropped__card:nth-child(3) {
+  background-color: rgba(111, 176, 219, 0.61);
+  width: 35%;
+}
+.dropped__card:nth-child(4) {
+  background-color:  rgba(111, 176, 219, 0.61);
+  width: 35%;
+}
+.dropped__card:nth-child(5) {
+  background-color:  rgb(216, 234, 235);
+}
+.dropped__card:nth-child(6) {
+  background-color: antiquewhite;
+}
+
+.dropped__card img {
+  width: 100%;
+}
+
+.dropped__card__title {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--primaryColor);
+  padding: 10px 0px;
+}
+
+.dropped__card__text {
+  font-size: 18px;
+  color: rgb(99, 93, 93);
+  padding: 20px 0px;
+}
+
+.dropped__card__link {
+  background-color: transparent;
+  border: 1px solid var(--primaryColor);
+  width: 200px;
+}
+
+.dropped__card__link:hover {
+  box-shadow: inset 200px 0px rgb(168, 162, 162);
+}
+
+.dropped__bottom__link {
+  display: block;
+  gap: 10px;
+  width: 250px;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid var(--primaryColor);
+  transition: .7s;
+  margin-top: 30px;
+}
+
+.dropped__bottom__link i {
+  color: green;
+}
+
+.dropped__bottom__link:hover {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+}
+
+.dropped__bottom__link:hover i {
+  color: var(--primaryColor);
+}
+
+@media (max-width:1000px) {
+  .dropped__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .dropped__card {
+    width: 40% !important;
+  }
+}
+
+@media (max-width:800px) {
+  .dropped__card {
+    width: 45% !important;
+  }
+}
+
+@media (max-width:700px) {
+  .dropped__card {
+    width: 75% !important;
+  }
+
+  .dropped__title {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width:450px) {
+  .dropped__card {
+    width: 100% !important;
+  }
+
+  .dropped__title {
+    font-size: 40px;
+  }
+
+  .dropped__card__link {
+    font-size: 18px;
+  }
+
+  .dropped__bottom__link {
+    width: 220px;
+  }
+}
